@@ -1,3 +1,20 @@
+'''
+# This is a detection tool for reviewing suspicious gameplay, not for real-time anti-cheat
+
+How to Use:
+
+Install dependencies:
+pip install opencv-python numpy
+
+Run the detector:
+detector = FPSCheatDetector()
+results = detector.process_video("your_gameplay.mp4")
+
+Review the report: The system generates confidence scores (0-1) for each cheat type and provides detailed analysis.
+'''
+
+
+
 import cv2
 import numpy as np
 import json
